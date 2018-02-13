@@ -117,7 +117,20 @@ add_action( 'widgets_init', 'ohmyhats_widgets_init' );
  * Enqueue scripts and styles.
  */
 function ohmyhats_scripts() {
+
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js' );
+
+	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+
+	wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
+
 	wp_enqueue_style( 'ohmyhats-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'rubik', 'https://fonts.googleapis.com/css?family=Rubik:400,500,700' );
+
+	wp_enqueue_style( 'poppins', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700' );
+
+	wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
 
 	wp_enqueue_script( 'ohmyhats-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -155,4 +168,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
