@@ -98,7 +98,7 @@ a:visited{color:black}
 a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
-.main-navigation{clear:both;display:block;float:right;width:100%;margin-right:5%}
+.main-navigation{clear:both;display:block;float:right;width:100%;margin-right:5%;padding:3rem}
 .main-navigation ul{list-style:none;margin:0;padding-left:0;float:right;display:inline}
 .main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999}
 .main-navigation ul ul ul{left:-999em;top:0}
@@ -111,8 +111,9 @@ a:hover,a:active{outline:0}
 .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
-.site-branding{position:relative;z-index:10}
+.site-branding{position:absolute;left:5%;top:3.6rem}
 .site-branding img{max-width:10rem}
+.site-branding .site-title{font-weight:700;font-family:"Poppins",sans-serif;text-transform:uppercase;font-size:40px}
 #shiftnav-toggle-main{margin-top:4rem !important;margin-right:4rem !important;border:3px solid #3b14a1;position:fixed}
 .shiftnav-site-title{text-transform:uppercase;font-family:"Poppins",sans-serif;font-size:16px;font-weight:bold}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}
@@ -152,7 +153,6 @@ embed,iframe,object{max-width:100%}
 .gallery-columns-8 .gallery-item{max-width:12.5%}
 .gallery-columns-9 .gallery-item{max-width:11.11%}
 .gallery-caption{display:block}
-.site-title{font-family:"Rubik";text-transform:uppercase;font-size:40px;margin-left:5%;display:inline}
 .fp-tableCell{position:relative}
 .slide-image{background-size:cover;background-position:center center;position:absolute;width:60%;height:100%;left:0;top:0;bottom:0}
 .slide-image img{height:100%;width:100%}

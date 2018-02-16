@@ -11,7 +11,6 @@
 
 ?>
 
-	</div><!-- #content -->
 	<div class="newsletter">
 		<!-- Begin MailChimp Signup Form -->
 		<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
@@ -51,6 +50,7 @@
 			</div>
 		</div>
 	</div>
+	</div><!-- #content -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

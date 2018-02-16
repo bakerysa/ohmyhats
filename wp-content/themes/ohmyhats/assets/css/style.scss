@@ -551,6 +551,7 @@ a:hover, a:active {
 	float: right;
 	width: 100%;
 	margin-right: 5%;
+	padding: 3rem;
 }
 
 .main-navigation ul {
@@ -640,10 +641,17 @@ a:hover, a:active {
 }
 
 .site-branding {
-	position: relative;
-	z-index: 10;
+	position: absolute;
+	left: 5%;
+	top: 3.6rem;
 	img {
 		max-width: 10rem;
+	}
+	.site-title {
+		font-weight: 700;
+		font-family: $poppins;
+		text-transform: uppercase;
+		font-size: 40px;
 	}
 }
 
@@ -919,13 +927,6 @@ object {
 	display: block;
 }
 
-.site-title {
-	font-family: $rubik;
-	text-transform: uppercase;
-	font-size: 40px;
-	margin-left: 5%;
-	display: inline;
-}
 
 // Home
 
