@@ -113,7 +113,6 @@ var rename       = require('gulp-rename'); // Renames files E.g. style.css -> st
 var lineec       = require('gulp-line-ending-corrector'); // Consistent Line Endings for non UNIX systems. Gulp Plugin for Line Ending Corrector (A utility that makes sure your files have consistent line endings)
 var filter       = require('gulp-filter'); // Enables you to work on a subset of the original files by filtering them using globbing.
 var sourcemaps   = require('gulp-sourcemaps'); // Maps code in a compressed file (E.g. style.css) back to it’s original position in a source file (E.g. structure.scss, which was later combined with other css files to generate style.css)
-var notify       = require('gulp-notify'); // Sends message notification to you
 var browserSync  = require('browser-sync').create(); // Reloads browser and injects CSS. Time-saving synchronised browser testing.
 var reload       = browserSync.reload; // For manual browser reload.
 var wpPot        = require('gulp-wp-pot'); // For generating the .pot file.
@@ -202,7 +201,6 @@ gulp.task( 'browser-sync', function() {
 
     .pipe( filter( '**/*.css' ) ) // Filtering stream to only css files
     .pipe( browserSync.stream() )// Reloads style.min.css if that is enqueued.
-    .pipe( notify( { message: 'TASK: "styles" Completed! 💯', onLast: true } ) )
  });
 
 
@@ -228,8 +226,7 @@ gulp.task( 'browser-sync', function() {
     }))
     .pipe( uglify() )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
-    .pipe( gulp.dest( jsVendorDestination ) )
-    .pipe( notify( { message: 'TASK: "vendorsJs" Completed! 💯', onLast: true } ) );
+    .pipe( gulp.dest( jsVendorDestination ) );
  });
 
 
@@ -255,8 +252,7 @@ gulp.task( 'browser-sync', function() {
     }))
     .pipe( uglify() )
     .pipe( lineec() ) // Consistent Line Endings for non UNIX systems.
-    .pipe( gulp.dest( jsCustomDestination ) )
-    .pipe( notify( { message: 'TASK: "customJs" Completed! 💯', onLast: true } ) );
+    .pipe( gulp.dest( jsCustomDestination ) );
  });
 
 
@@ -281,8 +277,7 @@ gulp.task( 'browser-sync', function() {
           interlaced: true,
           svgoPlugins: [{removeViewBox: false}]
         } ) )
-    .pipe(gulp.dest( imagesDestination ))
-    .pipe( notify( { message: 'TASK: "images" Completed! 💯', onLast: true } ) );
+    .pipe(gulp.dest( imagesDestination ));
  });
 
 
@@ -306,7 +301,6 @@ gulp.task( 'browser-sync', function() {
              team          : team
          } ))
         .pipe(gulp.dest(translationDestination + '/' + translationFile ))
-        .pipe( notify( { message: 'TASK: "translate" Completed! 💯', onLast: true } ) )
 
  });
 

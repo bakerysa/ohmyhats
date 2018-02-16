@@ -9,6 +9,16 @@
 
 ?>
 
-<div class="home-image">
-	
-</div>
+	<div class="section">
+		<div class="col-md-7">
+			<div class="posts-slider">
+
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="home-image">
+				<img src="<?php the_field('home_image') ?>" />
+			</div>
+		</div>
+
+	</div>

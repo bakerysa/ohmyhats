@@ -1003,10 +1003,11 @@ object {
 	}
 }
 
-// Section 1
+// Intro
 
-.zero-one {
+.home-image {
 	position: absolute;
+	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -1027,6 +1028,20 @@ object {
 		bottom: 0.8rem;
 		height: 2px;
 		width: 3rem;
+	}
+}
+
+h1 {
+	margin-bottom: 3rem;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-family: $poppins;
+	color: black;
+	font-weight: 700;
+	span {
+		color: $blue-light;
+		display: block;
+		margin-left: 8rem;
 	}
 }
 
@@ -1077,7 +1092,7 @@ object {
 	}
 }
 
-// Section 2
+// Latest Posts
 
 .textbox {
 	padding: 6rem;
@@ -1176,7 +1191,27 @@ object {
 	}
 }
 
-// Section 3
+// Social
+
+.social {
+	display: block;
+	margin: 2rem auto;
+	i {
+		font-size: 20px;
+		min-width: 40px;
+		min-height: 40px;
+		padding: 0.5rem;
+		border: 2px solid black;
+		text-align: center;
+		&:hover {
+			color: white;
+			background: black;
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+}
 
 .index-block-left {
 	height: 4rem;
@@ -1243,7 +1278,7 @@ object {
 	}
 }
 
-// Section 4
+// About
 
 .index-block-right {
 	right: 5%;
@@ -1265,15 +1300,6 @@ object {
 	}
 	max-width: 50rem;
 	margin: 0 auto;
-	input {
-		margin-top: 1rem;
-		border: 3px solid black;
-		border-radius: 0;
-		text-transform: uppercase;
-		height: 3rem;
-		padding-left: 1rem;
-
-	}
 	textarea {
 		border: 3px solid black;
 		border-radius: 0;
@@ -1332,7 +1358,12 @@ object {
 	font-size: 16px;
 }
 
-// Footer
+.about-stamp {
+	max-width: 6rem;
+	margin: 3rem auto;
+}
+
+// Recap
 
 .end {
 	margin-top: 4rem;
@@ -1368,6 +1399,53 @@ object {
 			&:focus {
 				outline: none;
 			}
+		}
+	}
+}
+
+// Newsletter
+
+.newsletter {
+	max-width: 45rem;
+	margin: 4rem auto;
+	label {
+		display: block;
+		text-transform: uppercase;
+		margin-left: 2rem;
+		margin-bottom: 1.5rem;
+		letter-spacing: 2px;
+	}
+	input {
+		border: 3px solid black !important;
+		width: 100%;
+		border-radius: 0 !important;
+		height: 3rem !important;
+	}
+	#mc_embed_signup .button {
+		text-transform: uppercase;
+		font-size: 14px;
+		min-width: 14rem;
+		float: right;
+		background: $grey;
+		margin-top: 1rem;
+		margin-right: 0;
+		color: white;
+		letter-spacing: 2px;
+		border-color: transparent;
+		width: 20%;
+		&::before {
+			content: '';
+	    position: absolute;
+	    background: $pink;
+	    left: 0;
+	    bottom: 5.2rem;
+	    height: 4px;
+	    width: 3rem;
+		}
+		&:hover {
+			color: $grey;
+			background: white;
+			border-color: black;
 		}
 	}
 }
@@ -1479,3 +1557,7 @@ object {
 				clear: both;
     }
 }
+
+@import 'jquery.fullpage.scss';
+
+@import '_responsive.scss';
