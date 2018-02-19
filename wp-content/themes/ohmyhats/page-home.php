@@ -18,6 +18,8 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/content', 'home' );
 
+				get_template_part( 'template-parts/content', 'latest' );
+
 				get_template_part( 'template-parts/content', 'social' );
 
 				get_template_part( 'template-parts/content', 'about' );

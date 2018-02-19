@@ -949,16 +949,6 @@ object {
 	}
 }
 
-.pink-line {
-	display: block;
-	width: 22rem;
-	height: 6px;
-	background: $pink;
-	position: absolute;
-	bottom: 8rem;
-	left: 10rem;
-}
-
 .slide-box {
 	padding: 4rem 8rem;
 	background-color: $blue-light;
@@ -1191,11 +1181,30 @@ h1 {
 	}
 }
 
+.subtext-tl {
+	position: absolute;
+  left: 4rem;
+	top: 0rem;
+	font-weight: 500;
+	font-size: 16px;
+	text-transform: uppercase;
+	&:before {
+		content: '';
+		position: absolute;
+		background: black;
+		left: -4rem;
+		bottom: 0.8rem;
+		height: 2px;
+		width: 3rem;
+	}
+}
+
 // Social
 
 .social {
 	display: block;
 	margin: 2rem auto;
+	text-align: center;
 	i {
 		font-size: 20px;
 		min-width: 40px;
@@ -1211,6 +1220,23 @@ h1 {
 			outline: none;
 		}
 	}
+}
+
+.social-cta {
+	margin-top: 8rem;
+}
+
+.social-image {
+	margin-top: 2.5rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.social-stamp {
+	max-width: 8rem;
+	float: right;
+	margin-right: 4rem;
+	margin-bottom: -4rem;
 }
 
 .index-block-left {
@@ -1406,6 +1432,7 @@ h1 {
 // Newsletter
 
 .newsletter {
+	position: relative;
 	max-width: 45rem;
 	margin: 4rem auto;
 	label {
@@ -1414,6 +1441,9 @@ h1 {
 		margin-left: 2rem;
 		margin-bottom: 1.5rem;
 		letter-spacing: 2px;
+	}
+	::placeholder {
+		margin-left: 2rem;
 	}
 	input {
 		border: 3px solid black !important;
@@ -1433,21 +1463,21 @@ h1 {
 		letter-spacing: 2px;
 		border-color: transparent;
 		width: 20%;
-		&::before {
-			content: '';
-	    position: absolute;
-	    background: $pink;
-	    left: 0;
-	    bottom: 5.2rem;
-	    height: 4px;
-	    width: 3rem;
-		}
 		&:hover {
 			color: $grey;
 			background: white;
 			border-color: black;
 		}
 	}
+}
+
+.pink-line {
+	position: absolute;
+	background: $pink;
+	right: 16rem;
+	bottom: 1.3rem;
+	height: 6px;
+	width: 6rem;
 }
 
 // Miscellaneous
@@ -1461,7 +1491,7 @@ h1 {
 }
 
 .divider {
-	position: absolute;
+	position: relative;
 	bottom: 0rem;
 	width: 90%;
 	left: 5%;

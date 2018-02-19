@@ -156,7 +156,6 @@ embed,iframe,object{max-width:100%}
 .fp-tableCell{position:relative}
 .slide-image{background-size:cover;background-position:center center;position:absolute;width:60%;height:100%;left:0;top:0;bottom:0}
 .slide-image img{height:100%;width:100%}
-.pink-line{display:block;width:22rem;height:6px;background:#fc1aa1;position:absolute;bottom:8rem;left:10rem}
 .slide-box{padding:4rem 8rem;background-color:#3b14a1;color:white;position:absolute;left:50%;top:50%;-webkit-transform:translate(-25%,-50%);-ms-transform:translate(-25%,-50%);transform:translate(-25%,-50%);z-index:10}
 .slide-box .quote h2{text-transform:uppercase;font-size:40px;font-family:"Poppins",sans-serif;text-align:left;margin-top:3rem}
 .slide-box .quote h2 span{color:#fc1aa1}
@@ -189,10 +188,15 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .pink-block-left{height:4rem;width:18rem;background:#fc1aa1;position:absolute;top:-2rem;left:-2rem}
 .subtext-l{position:absolute;left:2rem;top:50%;-webkit-transform:translateY(-50%) rotate(-90deg);-ms-transform:translateY(-50%) rotate(-90deg);transform:translateY(-50%) rotate(-90deg);font-weight:500;font-size:16px;text-transform:uppercase}
 .subtext-l:after{content:'';position:absolute;background:black;right:-4rem;bottom:.8rem;height:2px;width:3rem}
-.social{display:block;margin:2rem auto}
+.subtext-tl{position:absolute;left:4rem;top:0;font-weight:500;font-size:16px;text-transform:uppercase}
+.subtext-tl:before{content:'';position:absolute;background:black;left:-4rem;bottom:.8rem;height:2px;width:3rem}
+.social{display:block;margin:2rem auto;text-align:center}
 .social i{font-size:20px;min-width:40px;min-height:40px;padding:.5rem;border:2px solid black;text-align:center}
 .social i:hover{color:white;background:black}
 .social i:focus{outline:0}
+.social-cta{margin-top:8rem}
+.social-image{margin-top:2.5rem;padding-left:0;padding-right:0}
+.social-stamp{max-width:8rem;float:right;margin-right:4rem;margin-bottom:-4rem}
 .index-block-left{height:4rem;width:15rem;background:#fc1aa1;position:absolute;left:5%;top:5rem}
 .index-block-left .zero-three{margin-left:2rem;margin-top:2rem}
 .subtext-tr{position:absolute;right:calc(5% + 4.5rem);top:7.5rem;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);font-weight:500;font-size:16px;text-transform:uppercase}
@@ -224,15 +228,19 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .end .social i{font-size:20px;min-width:40px;min-height:40px;padding:.5rem;border:2px solid black;text-align:center}
 .end .social i:hover{color:white;background:black}
 .end .social i:focus{outline:0}
-.newsletter{max-width:45rem;margin:4rem auto}
+.newsletter{position:relative;max-width:45rem;margin:4rem auto}
 .newsletter label{display:block;text-transform:uppercase;margin-left:2rem;margin-bottom:1.5rem;letter-spacing:2px}
+.newsletter ::-webkit-input-placeholder{margin-left:2rem}
+.newsletter ::-moz-placeholder{margin-left:2rem}
+.newsletter :-ms-input-placeholder{margin-left:2rem}
+.newsletter ::placeholder{margin-left:2rem}
 .newsletter input{border:3px solid black !important;width:100%;border-radius:0 !important;height:3rem !important}
 .newsletter #mc_embed_signup .button{text-transform:uppercase;font-size:14px;min-width:14rem;float:right;background:#2b2b2b;margin-top:1rem;margin-right:0;color:white;letter-spacing:2px;border-color:transparent;width:20%}
-.newsletter #mc_embed_signup .button::before{content:'';position:absolute;background:#fc1aa1;left:0;bottom:5.2rem;height:4px;width:3rem}
 .newsletter #mc_embed_signup .button:hover{color:#2b2b2b;background:white;border-color:black}
+.pink-line{position:absolute;background:#fc1aa1;right:16rem;bottom:1.3rem;height:6px;width:6rem}
 .d-margin{margin-bottom:6rem}
 .float-right{float:right}
-.divider{position:absolute;bottom:0;width:90%;left:5%;background:black;height:4px}
+.divider{position:relative;bottom:0;width:90%;left:5%;background:black;height:4px}
 .divider-top{position:absolute;top:4rem;width:90%;left:5%;background:black;height:4px}
 .small-line-left{position:absolute;bottom:5rem;width:5%;left:10%;background:black;height:4px}
 .small-line-left-alt{position:absolute;top:5rem;width:5%;left:10%;background:black;height:4px}
