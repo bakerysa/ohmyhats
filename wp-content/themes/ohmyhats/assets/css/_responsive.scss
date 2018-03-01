@@ -1,0 +1,404 @@
+@media only screen and (max-width: 991px) {
+
+
+  .site-branding {
+  	position: relative;
+  	left: auto;
+  	top: auto;
+    margin-left: 5%;
+  	.site-title {
+  		font-size: 30px;
+  	}
+  }
+
+  #shiftnav-toggle-main {
+  	margin-top: 0rem !important;
+    margin-right: 0rem !important;
+    border: none;
+  }
+
+  // Home
+
+  .slide-image {
+    width: 100%;
+    height: 80%;
+  }
+
+  .slide-box {
+    padding: 2rem;
+    width: 90%;
+    bottom: 20%;
+    top: auto;
+    transform: translate(-50%, 20%);
+
+  	.quote {
+  		h2 {
+        font-size: 28px;
+  			padding-left: 1rem;
+        margin-bottom: 2rem;
+  		}
+  		p {
+  			padding-left: 2rem;
+  			font-weight: 300;
+  			max-width: 20rem;
+  			line-height: 25px;
+        margin-bottom: 2rem;
+  		}
+  		&:before {
+  		height: 4px;
+  		width: 25%;
+  		}
+  		&:after {
+        height: 4px;
+    		width: 25%;
+  		}
+  	}
+  }
+
+  .pink-line {
+  	display: block;
+  	width: 50%;
+  	height: 6px;
+  	background: $pink;
+  	position: absolute;
+  	bottom: -15%;
+  	left: 5%;
+  }
+
+  // Intro
+
+  .zero-one {
+  	opacity: 0.15;
+  }
+
+  .about-box {
+  	position: relative;
+  	max-width: 25rem;
+    margin: 0 auto;
+  	h2 {
+  		max-width: 30rem;
+  	}
+  	p {
+  		font-weight: 200;
+  		font-size: 16px;
+  		max-width: 30rem;
+  		margin-bottom: 2rem;
+  	}
+  }
+
+  .team-image {
+  	padding: 0;
+    margin-top: 2rem;
+  }
+
+  .btn {
+  	padding: 0.5rem 5rem;
+  	margin-left: 5rem;
+    border: 2px solid black;
+  	&:before {
+  		left: 0;
+  		bottom: 5.2rem;
+  		height: 3px;
+  		width: 4rem;
+  	}
+  }
+
+  .subtext-bl {
+  	position: relative;
+  	bottom: auto;
+  	right: auto;
+    left: 4rem;
+    transform: translateY(0%) rotate(0deg);
+    padding-top: 4rem;
+  }
+
+  .subtext-tl {
+  	position: relative !important;
+    left: auto;
+  	top: auto;
+  	&:before {
+  		content: '';
+  		position: absolute;
+  		background: black;
+  		left: -4rem;
+  		bottom: 0.8rem;
+  		height: 2px;
+  		width: 3rem;
+  	}
+  }
+
+  // Latest Posts
+
+  .latest-post {
+    margin-top: 5rem;
+  }
+
+  .post-preview {
+  	background-color: white;
+  	padding: 3rem;
+  	height: 60%;
+  	position: relative;
+  	top: 30%;
+  	width: 80%;
+  	margin: 0 auto;
+  	.post-meta {
+  		margin-bottom: 1.5rem;
+  	}
+  	p {
+  		max-height: 20rem;
+  	}
+  	h1 {
+  		font-size: 30px;
+  		min-height: 3rem;
+  		}
+  	}
+  	.post-button {
+  		border: 2px solid black;
+  		padding: 0.5rem 1.5rem;
+  		text-transform: uppercase;
+  		text-align: center;
+  		margin: 0 auto;
+  		display: block;
+  		max-width: 14rem;
+  		font-weight: 700;
+  		letter-spacing: 1px;
+  		position: relative;
+  		bottom: 0;
+  		&:hover {
+  			background: black;
+  			color: white;
+  			text-decoration: none;
+  		}
+  	}
+
+  .textbox {
+  	padding: 1rem;
+  	float: none;
+    text-align: center;
+  	h2 {
+      font-size: 3rem;
+  		span {
+  			margin-left: 0;
+  		}
+  	}
+  	p {
+  		max-width: none;
+  	}
+  }
+
+  .image-container {
+  	margin-top: 6rem;
+  }
+
+  .subtext-l {
+  	position: relative;
+  	left: 4rem;
+    padding-top: 2rem;
+  	top: 0;
+  	transform: translateY(0%) rotate(0deg);
+  	&:after {
+  		content: none;
+  	}
+    &:before {
+      content: '';
+  		position: absolute;
+  		background: black;
+  		left: -4rem;
+  		top: 2.6rem;
+  		height: 2px;
+  		width: 3rem;
+    }
+  }
+
+  // Social
+
+  .index-block-left {
+  	right: 0;
+    left: auto;
+  	top: 4rem;
+  	.zero-three {
+  		margin-right: 2rem;
+      margin-left: auto;
+  		margin-top: 2rem;
+  	}
+  }
+
+  .subtext-tr {
+    left: 4rem;
+  	right: auto;
+  	top: 0rem;
+  	transform: translateY(0%);
+  	&:after {
+  		content: none;
+  	}
+    &:before {
+      content: '';
+      position: absolute;
+      background: black;
+      left: -4rem;
+      top: 0.8rem;
+      height: 2px;
+      width: 3rem;
+    }
+  }
+
+  .blackbox {
+  	padding: 4rem;
+  	max-width: 40rem;
+    margin-top: 12rem;
+  	.quote-line {
+  		position: absolute;
+  		top: 2rem;
+  		background: $pink;
+  		height: 4px;
+  		width: 60%;
+  	}
+  	p {
+  		font-size: 16px;
+  		span {
+  			margin-left: 0rem;
+        font-size: 18px;
+  		}
+  	}
+  }
+  .clients {
+  	padding: 2rem;
+  	position: relative;
+    margin-top: 8rem;
+  }
+
+  .client-logo {
+  	img {
+  		padding: 1rem;
+  	}
+  }
+
+  // About
+
+  .index-block-right {
+  	top: 4rem;
+  	.zero-four {
+  		margin-left: 7.5rem;
+  		margin-top: 2rem;
+  	}
+  }
+
+  .index-block-right {
+  	right: 0rem !important;
+  }
+
+  .contact-box {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    .send-line {
+      width: 6rem;
+    }
+  }
+
+  .contact-header {
+    h2 {
+      font-size: 3rem;
+      max-width: 30rem;
+      line-height: 3rem;
+      span {
+        color: $blue-light;
+      }
+    }
+  }
+
+  .contact-description {
+  	margin-top: 1rem;
+  	margin-bottom: 2rem;
+  	font-size: 18px;
+  }
+
+  .social-image {
+    text-align: center;
+    padding-left: 15px;
+  	padding-right: 15px;
+  }
+
+  // Recap
+
+  // Newsletter
+
+.newsletter {
+  padding: 2rem;
+  #mc_embed_signup .button {
+		min-width: 100%;
+    clear: right;
+		width: 100%;
+  }
+}
+
+.pink-line {
+	display: none;
+}
+
+  // Miscellaneous
+
+  .m-margin {
+    margin-top: 4rem;
+  }
+
+  .float-right {
+  	float: none;
+  }
+
+  .divider {
+  	position: relative;
+  	bottom: 0rem;
+  	width: 100%;
+  	left: auto;
+  	background: black;
+  	height: 3px;
+  }
+
+  .divider-top {
+  	position: absolute;
+  	top: 4rem;
+  	width: 100%;
+  	left: auto;
+  	height: 3px;
+  }
+
+  .small-line-left {
+  	display: none;
+  }
+
+  .small-line-left-alt {
+  	display: none;
+  }
+
+  .small-line-right {
+  	display: none;
+  }
+
+// Fullpage
+
+.fp-slidesNav.bottom {
+	bottom: 10% !important;
+	ul {
+		right: 5%;
+	}
+}
+.home-image {
+  padding-top: 0;
+  position: absolute;
+  right: auto;
+  left: 3rem;
+  top: 0rem;
+  transform: translateY(0%);
+  z-index: 10;
+  width: 100%;
+  img {
+    max-width: 6rem;
+  }
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+  .subtext-l {
+  	left: 0rem;
+  }
+}

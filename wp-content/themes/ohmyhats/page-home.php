@@ -24,6 +24,8 @@ get_header(); ?>
 
 				get_template_part( 'template-parts/content', 'about' );
 
+				get_template_part( 'template-parts/content', 'recap' );
+
 				get_template_part( 'template-parts/content', 'newsletter' );
 
 				// If comments are open or we have at least one comment, load up the comment template.

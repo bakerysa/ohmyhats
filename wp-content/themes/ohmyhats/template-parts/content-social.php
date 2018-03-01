@@ -15,7 +15,7 @@
 		<?php the_field('social_subtext') ?>
 	</div>
 
-		<div class="col-md-6 col-md-offset-2">
+		<div class="col-md-6 col-md-offset-2 col-sm-12">
 
 			<?php if( have_rows('social_gallery') ): ?>
 
@@ -24,7 +24,7 @@
 					$image = get_sub_field('grid_image');
 					?>
 
-					<div class="col-md-4 social-image">
+					<div class="col-md-4 col-xs-6 social-image">
 
 						<?php if( $image ): ?>
 							<img src="<?php echo $image; ?>" />

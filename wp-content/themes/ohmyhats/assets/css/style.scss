@@ -560,6 +560,7 @@ a:hover, a:active {
 	padding-left: 0;
 	float: right;
 	display: inline;
+	z-index: 100;
 }
 
 .main-navigation ul ul {
@@ -596,6 +597,7 @@ a:hover, a:active {
 	margin-right: 2rem;
 	font-size: 16px;
 	text-transform: uppercase;
+	z-index: 100;
 }
 
 .main-navigation a {
@@ -656,9 +658,6 @@ a:hover, a:active {
 }
 
 #shiftnav-toggle-main {
-	margin-top: 4rem !important;
-  margin-right: 4rem !important;
-	border: 3px solid $blue-light;
 	position: fixed;
 }
 
@@ -786,6 +785,10 @@ a:hover, a:active {
 	display: block;
 }
 
+.page-title {
+	text-align: center;
+}
+
 .hentry {
 	margin: 0 0 1.5em;
 }
@@ -798,6 +801,12 @@ a:hover, a:active {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+.entry-title {
+	text-transform: uppercase;
+	font-family: $rubik;
+	text-align: center;
 }
 
 .page-links {
@@ -996,10 +1005,16 @@ object {
 // Intro
 
 .home-image {
+	padding-top: 10%;
 	position: absolute;
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
+	z-index: 10;
+	width: 50%;
+	img {
+		width: 100%;
+	}
 }
 
 .subtext-bl {
@@ -1022,7 +1037,6 @@ object {
 }
 
 h1 {
-	margin-bottom: 3rem;
 	text-transform: uppercase;
 	font-size: 50px;
 	font-family: $poppins;
@@ -1199,6 +1213,55 @@ h1 {
 	}
 }
 
+.post-preview {
+	background-color: white;
+	padding: 3rem;
+	height: 60%;
+	position: relative;
+	top: 30%;
+	width: 80%;
+	margin: 0 auto;
+	.post-meta {
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+	p {
+		max-height: 20rem;
+	}
+	h1 {
+		font-size: 30px;
+		min-height: 5rem;
+		a {
+			&:hover {
+				text-decoration: none;
+				color: black;
+			}
+		}
+		span {
+			color: $pink;
+			margin-left: 0rem !important;
+		}
+	}
+	.post-button {
+		border: 2px solid black;
+		padding: 0.5rem 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		max-width: 14rem;
+		font-weight: 700;
+		letter-spacing: 1px;
+		position: relative;
+		bottom: 0;
+		&:hover {
+			background: black;
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
 // Social
 
 .social {
@@ -1319,6 +1382,11 @@ h1 {
 	}
 }
 
+.wpcf {
+	margin: 0 auto;
+	width: 50%;
+}
+
 .contact-box {
 	p {
 		margin: 0;
@@ -1334,6 +1402,13 @@ h1 {
 		padding-left: 1rem;
 		padding-top: 1rem;
 	}
+	.wpcf7-email {
+		border: 3px solid black;
+		border-radius: 0;
+		margin-top: 1rem;
+		text-transform: uppercase;
+		padding: 1rem;
+	}
 	.wpcf7-submit {
 		text-transform: uppercase;
 		font-size: 14px;
@@ -1345,10 +1420,12 @@ h1 {
 		color: white;
 		letter-spacing: 2px;
 		border-color: transparent;
+		border-radius: 0;
+		height: 3rem;
 		&:hover {
 			color: $grey;
 			background: white;
-			border-color: black;
+			border: 3px solid black;
 		}
 	}
 	.send-line {
@@ -1363,6 +1440,10 @@ h1 {
 	.wpcf7-text {
 		width: 100%;
 	}
+}
+
+.edit-link {
+	display: none;
 }
 
 .contact-header {
@@ -1398,10 +1479,17 @@ h1 {
 	letter-spacing: 1px;
 	.copyright {
 		color: black;
+		p {
+			display: inline-block;
+		}
 		span {
 			color: $blue-light;
 			text-transform: uppercase;
 			font-weight: bold;
+			display: inline-block;
+		}
+		a {
+			display: inline-block;
 		}
 	}
 	.legal {
@@ -1450,6 +1538,9 @@ h1 {
 		width: 100%;
 		border-radius: 0 !important;
 		height: 3rem !important;
+	}
+	#mce-EMAIL {
+		padding-left: 1rem;
 	}
 	#mc_embed_signup .button {
 		text-transform: uppercase;
@@ -1533,6 +1624,10 @@ h1 {
 	right: 10%;
 	background: black;
 	height: 4px;
+}
+
+.carousel-control {
+	display: none;
 }
 
 /*--------------------------------------------------------------

@@ -11,7 +11,7 @@
 
 	<div class="section">
 		<div class="subtext-tl">
-			<?php the_field('latest_subtext') ?>
+			The Latest
 		</div>
 		<div class="container">
 		<?php
@@ -22,13 +22,21 @@
 				background-position: center;
     		background-repeat: no-repeat;
     		background-size: cover;
-    		height: 50rem;"><div class="post-preview"><div class="post-meta">'
-				. get_post_meta($recent["ID"])
-				. '<a href="'
+    		height: 50rem;"><div class="post-preview"><div class="post-meta"><span>'
+				. get_the_category($recent)
+				.'</span> | '
+				. get_the_date()
+				. '</div>'
+				. '<h1><a href="'
 				. get_permalink($recent["ID"])
 				. '">'
-				.   $recent["post_title"]
-				.'</a> </div> </div> </div> </div>';
+				. $recent["post_title"]
+				.'</a> </h1>'
+				. '<p>'
+				. get_the_excerpt($recent["ID"])
+				.'</p> <a class="post-button" href="'
+				. get_permalink($recent["ID"])
+				.'">Read More</a> </div> </div> </div>';
 			}
 			wp_reset_query();
 		?>

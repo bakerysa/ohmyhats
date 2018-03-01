@@ -99,13 +99,13 @@ a:hover,a:focus,a:active{color:midnightblue}
 a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 .main-navigation{clear:both;display:block;float:right;width:100%;margin-right:5%;padding:3rem}
-.main-navigation ul{list-style:none;margin:0;padding-left:0;float:right;display:inline}
+.main-navigation ul{list-style:none;margin:0;padding-left:0;float:right;display:inline;z-index:100}
 .main-navigation ul ul{box-shadow:0 3px 3px rgba(0,0,0,0.2);float:left;position:absolute;top:100%;left:-999em;z-index:99999}
 .main-navigation ul ul ul{left:-999em;top:0}
 .main-navigation ul ul li:hover>ul,.main-navigation ul ul li.focus>ul{left:100%}
 .main-navigation ul ul a{width:200px}
 .main-navigation ul li:hover>ul,.main-navigation ul li.focus>ul{left:auto}
-.main-navigation li{float:left;position:relative;margin-right:2rem;font-size:16px;text-transform:uppercase}
+.main-navigation li{float:left;position:relative;margin-right:2rem;font-size:16px;text-transform:uppercase;z-index:100}
 .main-navigation a{display:block;text-decoration:none}
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
@@ -114,7 +114,7 @@ a:hover,a:active{outline:0}
 .site-branding{position:absolute;left:5%;top:3.6rem}
 .site-branding img{max-width:10rem}
 .site-branding .site-title{font-weight:700;font-family:"Poppins",sans-serif;text-transform:uppercase;font-size:40px}
-#shiftnav-toggle-main{margin-top:4rem !important;margin-right:4rem !important;border:3px solid #3b14a1;position:fixed}
+#shiftnav-toggle-main{position:fixed}
 .shiftnav-site-title{text-transform:uppercase;font-family:"Poppins",sans-serif;font-size:16px;font-weight:bold}
 .screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute !important;width:1px;word-wrap:normal !important}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;-webkit-clip-path:none;clip-path:none;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
@@ -127,9 +127,11 @@ a:hover,a:active{outline:0}
 .widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 .sticky{display:block}
+.page-title{text-align:center}
 .hentry{margin:0 0 1.5em}
 .updated:not(.published){display:none}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
+.entry-title{text-transform:uppercase;font-family:"Rubik";text-align:center}
 .page-links{clear:both;margin:0 0 1.5em}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
@@ -162,10 +164,11 @@ embed,iframe,object{max-width:100%}
 .slide-box .quote p{font-size:18px;font-weight:300;max-width:20rem;line-height:30px}
 .slide-box .quote:before{content:'';display:block;height:6px;width:50%;background:white}
 .slide-box .quote:after{content:'';display:block;height:6px;width:50%;background:white;float:right}
-.home-image{position:absolute;right:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.home-image{padding-top:10%;position:absolute;right:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);z-index:10;width:50%}
+.home-image img{width:100%}
 .subtext-bl{position:absolute;bottom:10rem;left:5%;text-transform:uppercase;font-weight:500;font-size:16px;margin-left:3%}
 .subtext-bl:before{content:'';position:absolute;background:black;left:-4rem;bottom:.8rem;height:2px;width:3rem}
-h1{margin-bottom:3rem;text-transform:uppercase;font-size:50px;font-family:"Poppins",sans-serif;color:black;font-weight:700}
+h1{text-transform:uppercase;font-size:50px;font-family:"Poppins",sans-serif;color:black;font-weight:700}
 h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .about-box{position:relative;max-width:40rem}
 .about-box h2{text-transform:uppercase;font-size:45px;font-weight:700;max-width:35rem;font-family:"Poppins",sans-serif;color:black;margin-bottom:2rem}
@@ -190,6 +193,14 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .subtext-l:after{content:'';position:absolute;background:black;right:-4rem;bottom:.8rem;height:2px;width:3rem}
 .subtext-tl{position:absolute;left:4rem;top:0;font-weight:500;font-size:16px;text-transform:uppercase}
 .subtext-tl:before{content:'';position:absolute;background:black;left:-4rem;bottom:.8rem;height:2px;width:3rem}
+.post-preview{background-color:white;padding:3rem;height:60%;position:relative;top:30%;width:80%;margin:0 auto}
+.post-preview .post-meta{text-transform:uppercase;margin-bottom:2rem}
+.post-preview p{max-height:20rem}
+.post-preview h1{font-size:30px;min-height:5rem}
+.post-preview h1 a:hover{text-decoration:none;color:black}
+.post-preview h1 span{color:#fc1aa1;margin-left:0 !important}
+.post-preview .post-button{border:2px solid black;padding:.5rem 1.5rem;text-transform:uppercase;text-align:center;margin:0 auto;display:block;max-width:14rem;font-weight:700;letter-spacing:1px;position:relative;bottom:0}
+.post-preview .post-button:hover{background:black;color:white;text-decoration:none}
 .social{display:block;margin:2rem auto;text-align:center}
 .social i{font-size:20px;min-width:40px;min-height:40px;padding:.5rem;border:2px solid black;text-align:center}
 .social i:hover{color:white;background:black}
@@ -209,20 +220,25 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .clients .client-item{margin:3rem auto}
 .index-block-right{right:5%;height:4rem;width:15rem;background:#fc1aa1;position:absolute;top:-2rem}
 .index-block-right .zero-four{margin-left:7.5rem;margin-top:2rem}
+.wpcf{margin:0 auto;width:50%}
 .contact-box{max-width:50rem;margin:0 auto}
 .contact-box p{margin:0;padding:0}
 .contact-box textarea{border:3px solid black;border-radius:0;margin-top:1rem;text-transform:uppercase;padding-left:1rem;padding-top:1rem}
-.contact-box .wpcf7-submit{text-transform:uppercase;font-size:14px;min-width:14rem;float:right;background:#2b2b2b;margin-top:.5rem;margin-right:0;color:white;letter-spacing:2px;border-color:transparent}
-.contact-box .wpcf7-submit:hover{color:#2b2b2b;background:white;border-color:black}
+.contact-box .wpcf7-email{border:3px solid black;border-radius:0;margin-top:1rem;text-transform:uppercase;padding:1rem}
+.contact-box .wpcf7-submit{text-transform:uppercase;font-size:14px;min-width:14rem;float:right;background:#2b2b2b;margin-top:.5rem;margin-right:0;color:white;letter-spacing:2px;border-color:transparent;border-radius:0;height:3rem}
+.contact-box .wpcf7-submit:hover{color:#2b2b2b;background:white;border:3px solid black}
 .contact-box .send-line{background:#fc1aa1;height:8px;position:relative;width:9rem;float:right;margin-right:2rem;margin-top:.2rem}
 .contact-box .wpcf7-text{width:100%}
+.edit-link{display:none}
 .contact-header h2{font-family:"Poppins",sans-serif;font-weight:bold;font-size:4rem;max-width:40rem;text-transform:uppercase}
 .contact-header h2 span{color:#3b14a1}
 .contact-description{margin-top:1rem;margin-bottom:2rem;font-size:16px}
 .about-stamp{max-width:6rem;margin:3rem auto}
 .end{margin-top:4rem;text-align:center;margin-bottom:2rem;letter-spacing:1px}
 .end .copyright{color:black}
-.end .copyright span{color:#3b14a1;text-transform:uppercase;font-weight:bold}
+.end .copyright p{display:inline-block}
+.end .copyright span{color:#3b14a1;text-transform:uppercase;font-weight:bold;display:inline-block}
+.end .copyright a{display:inline-block}
 .end .legal{text-transform:uppercase;margin-top:2rem}
 .end .social{display:block;margin:2rem auto}
 .end .social i{font-size:20px;min-width:40px;min-height:40px;padding:.5rem;border:2px solid black;text-align:center}
@@ -235,6 +251,7 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .newsletter :-ms-input-placeholder{margin-left:2rem}
 .newsletter ::placeholder{margin-left:2rem}
 .newsletter input{border:3px solid black !important;width:100%;border-radius:0 !important;height:3rem !important}
+.newsletter #mce-EMAIL{padding-left:1rem}
 .newsletter #mc_embed_signup .button{text-transform:uppercase;font-size:14px;min-width:14rem;float:right;background:#2b2b2b;margin-top:1rem;margin-right:0;color:white;letter-spacing:2px;border-color:transparent;width:20%}
 .newsletter #mc_embed_signup .button:hover{color:#2b2b2b;background:white;border-color:black}
 .pink-line{position:absolute;background:#fc1aa1;right:16rem;bottom:1.3rem;height:6px;width:6rem}
@@ -245,6 +262,7 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .small-line-left{position:absolute;bottom:5rem;width:5%;left:10%;background:black;height:4px}
 .small-line-left-alt{position:absolute;top:5rem;width:5%;left:10%;background:black;height:4px}
 .small-line-right{position:absolute;bottom:9rem;width:5%;right:10%;background:black;height:4px}
+.carousel-control{display:none}
 .fp-slidesNav.bottom{bottom:10% !important}
 .fp-slidesNav.bottom ul{position:absolute;right:20%}
 .fp-slidesNav.bottom ul li a span{background:white;height:8px;width:8px;margin:-4px 0 0 -4px}
@@ -288,5 +306,75 @@ h1 span{color:#3b14a1;display:block;margin-left:8rem}
 .fp-responsive .fp-auto-height-responsive.fp-section,.fp-responsive .fp-auto-height-responsive .fp-slide,.fp-responsive .fp-auto-height-responsive .fp-tableCell{height:auto !important}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
+}@media only screen and (min-width:992px) and (max-width:1200px){.subtext-l{left:0}
+}@media only screen and (max-width:991px){.site-branding{position:relative;left:auto;top:auto;margin-left:5%}
+.site-branding .site-title{font-size:30px}
+#shiftnav-toggle-main{margin-top:0 !important;margin-right:0 !important;border:0}
+.slide-image{width:100%;height:80%}
+.slide-box{padding:2rem;width:90%;bottom:20%;top:auto;-webkit-transform:translate(-50%,20%);-ms-transform:translate(-50%,20%);transform:translate(-50%,20%)}
+.slide-box .quote h2{font-size:28px;padding-left:1rem;margin-bottom:2rem}
+.slide-box .quote p{padding-left:2rem;font-weight:300;max-width:20rem;line-height:25px;margin-bottom:2rem}
+.slide-box .quote:before{height:4px;width:25%}
+.slide-box .quote:after{height:4px;width:25%}
+.pink-line{display:block;width:50%;height:6px;background:#fc1aa1;position:absolute;bottom:-15%;left:5%}
+.zero-one{opacity:.15}
+.about-box{position:relative;max-width:25rem;margin:0 auto}
+.about-box h2{max-width:30rem}
+.about-box p{font-weight:200;font-size:16px;max-width:30rem;margin-bottom:2rem}
+.team-image{padding:0;margin-top:2rem}
+.btn{padding:.5rem 5rem;margin-left:5rem;border:2px solid black}
+.btn:before{left:0;bottom:5.2rem;height:3px;width:4rem}
+.subtext-bl{position:relative;bottom:auto;right:auto;left:4rem;-webkit-transform:translateY(0) rotate(0);-ms-transform:translateY(0) rotate(0);transform:translateY(0) rotate(0);padding-top:4rem}
+.subtext-tl{position:relative !important;left:auto;top:auto}
+.subtext-tl:before{content:'';position:absolute;background:black;left:-4rem;bottom:.8rem;height:2px;width:3rem}
+.latest-post{margin-top:5rem}
+.post-preview{background-color:white;padding:3rem;height:60%;position:relative;top:30%;width:80%;margin:0 auto}
+.post-preview .post-meta{margin-bottom:1.5rem}
+.post-preview p{max-height:20rem}
+.post-preview h1{font-size:30px;min-height:3rem}
+.post-button{border:2px solid black;padding:.5rem 1.5rem;text-transform:uppercase;text-align:center;margin:0 auto;display:block;max-width:14rem;font-weight:700;letter-spacing:1px;position:relative;bottom:0}
+.post-button:hover{background:black;color:white;text-decoration:none}
+.textbox{padding:1rem;float:none;text-align:center}
+.textbox h2{font-size:3rem}
+.textbox h2 span{margin-left:0}
+.textbox p{max-width:none}
+.image-container{margin-top:6rem}
+.subtext-l{position:relative;left:4rem;padding-top:2rem;top:0;-webkit-transform:translateY(0) rotate(0);-ms-transform:translateY(0) rotate(0);transform:translateY(0) rotate(0)}
+.subtext-l:after{content:none}
+.subtext-l:before{content:'';position:absolute;background:black;left:-4rem;top:2.6rem;height:2px;width:3rem}
+.index-block-left{right:0;left:auto;top:4rem}
+.index-block-left .zero-three{margin-right:2rem;margin-left:auto;margin-top:2rem}
+.subtext-tr{left:4rem;right:auto;top:0;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}
+.subtext-tr:after{content:none}
+.subtext-tr:before{content:'';position:absolute;background:black;left:-4rem;top:.8rem;height:2px;width:3rem}
+.blackbox{padding:4rem;max-width:40rem;margin-top:12rem}
+.blackbox .quote-line{position:absolute;top:2rem;background:#fc1aa1;height:4px;width:60%}
+.blackbox p{font-size:16px}
+.blackbox p span{margin-left:0;font-size:18px}
+.clients{padding:2rem;position:relative;margin-top:8rem}
+.client-logo img{padding:1rem}
+.index-block-right{top:4rem}
+.index-block-right .zero-four{margin-left:7.5rem;margin-top:2rem}
+.index-block-right{right:0 !important}
+.contact-box{margin-top:8rem;margin-bottom:6rem}
+.contact-box .send-line{width:6rem}
+.contact-header h2{font-size:3rem;max-width:30rem;line-height:3rem}
+.contact-header h2 span{color:#3b14a1}
+.contact-description{margin-top:1rem;margin-bottom:2rem;font-size:18px}
+.social-image{text-align:center;padding-left:15px;padding-right:15px}
+.newsletter{padding:2rem}
+.newsletter #mc_embed_signup .button{min-width:100%;clear:right;width:100%}
+.pink-line{display:none}
+.m-margin{margin-top:4rem}
+.float-right{float:none}
+.divider{position:relative;bottom:0;width:100%;left:auto;background:black;height:3px}
+.divider-top{position:absolute;top:4rem;width:100%;left:auto;height:3px}
+.small-line-left{display:none}
+.small-line-left-alt{display:none}
+.small-line-right{display:none}
+.fp-slidesNav.bottom{bottom:10% !important}
+.fp-slidesNav.bottom ul{right:5%}
+.home-image{padding-top:0;position:absolute;right:auto;left:3rem;top:0;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);z-index:10;width:100%}
+.home-image img{max-width:6rem}
 }@media only screen and (max-width:767px){.one-half{width:100%;margin-right:0;clear:both}
 }

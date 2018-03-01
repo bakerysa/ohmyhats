@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
          //Navigation
      		menu: '#menu',
      		lockAnchors: false,
-     		anchors:['home', 'latest', 'follow', 'about', 'recap', 'footer'],
+     		anchors:['home', 'latest', 'social', 'about', 'recap', 'newsletter', 'footer'],
      		navigation: false,
      		navigationPosition: 'right',
      		showActiveTooltip: false,
@@ -56,7 +56,7 @@ jQuery(document).ready(function($) {
 
      		//Custom selectors
      		sectionSelector: '.section',
-     		slideSelector: '.slide',
+     		slideSelector: '.panel',
 
      		lazyLoading: true,
    });

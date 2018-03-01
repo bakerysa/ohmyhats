@@ -172,3 +172,13 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function remove_category_text_from_archive_title($title) {
+    return is_category()?single_cat_title('', false):$title;
+}
+add_filter('get_the_archive_title', 'remove_category_text_from_archive_title'); 
