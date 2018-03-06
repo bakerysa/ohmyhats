@@ -67,7 +67,7 @@
 				    		background-repeat: no-repeat;
 				    		background-size: cover;
 				    		height: 40rem;"><div class="post-preview"><div class="post-meta"><span>'
-								. get_the_category($post->ID)
+								. get_the_category($recent["cat_name"])
 								.'</span> | '
 								. get_the_date()
 								. '</div>'
