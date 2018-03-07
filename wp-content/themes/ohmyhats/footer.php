@@ -11,6 +11,8 @@
 
 ?>
 
+<div class="divider"></div>
+
 	<div class="end m-margin">
 		<div class="container">
 			<div class="copyright">

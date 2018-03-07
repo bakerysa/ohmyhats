@@ -37,7 +37,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<div class="divider"></div>
-
 <?php
 get_footer();

@@ -28,6 +28,4 @@
 		<!--End mc_embed_signup-->
 	</div>
 
-	<div class="divider"></div>
-
 </div>

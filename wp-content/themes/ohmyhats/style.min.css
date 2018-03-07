@@ -111,7 +111,7 @@ a:hover,a:active{outline:0}
 .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
-.site-branding{position:absolute;left:5%;top:3.6rem}
+.site-branding{position:absolute;left:10%;top:2.5rem}
 .site-branding img{max-width:10rem}
 .site-branding .site-title{font-weight:700;font-family:"Poppins",sans-serif;text-transform:uppercase;font-size:40px}
 #shiftnav-toggle-main{position:fixed}
