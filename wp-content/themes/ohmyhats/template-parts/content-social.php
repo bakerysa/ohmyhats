@@ -15,7 +15,11 @@
 		<?php the_field('social_subtext') ?>
 	</div>
 
-		<div class="col-md-6 col-md-offset-2 col-sm-12">
+	<div class="container">
+
+		<div class="col-md-8 col-sm-12">
+
+			<div class="max-width">
 
 			<?php if( have_rows('social_gallery') ): ?>
 
@@ -36,6 +40,7 @@
 
 			<?php endif; ?>
 			</div>
+			</div>
 		<div class="col-md-4 social-cta">
 			<img class="social-stamp" src="<?php the_field('social_stamp') ?>" />
 			<h1><?php the_field('social_header') ?></h1>
@@ -46,5 +51,5 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 </div>

@@ -74,6 +74,23 @@ summary {
 	display: block;
 }
 
+header {
+	position: relative;
+	.single-heading {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		width: 90%;
+		background-color: white;
+		padding: 2rem;
+		margin: 0;
+	}
+	h1 {
+		text-align: center;
+	}
+}
+
 audio,
 canvas,
 progress,
@@ -551,7 +568,7 @@ a:hover, a:active {
 	float: right;
 	width: 100%;
 	margin-right: 5%;
-	padding: 3rem;
+	padding: 4rem;
 }
 
 .main-navigation ul {
@@ -644,8 +661,8 @@ a:hover, a:active {
 
 .site-branding {
 	position: absolute;
-	left: 10%;
-  top: 2.5rem;
+	left: 5%;
+  top: 0rem;
 	img {
 		max-width: 10rem;
 	}
@@ -1148,9 +1165,8 @@ h1 {
 }
 
 .image-container {
-	margin: 0 auto;
 	position: relative;
-	max-width: 30rem;
+	max-width: 25rem;
 	height: auto;
 }
 
@@ -1286,20 +1302,32 @@ h1 {
 }
 
 .social-cta {
-	margin-top: 8rem;
+	margin-top: 6rem;
+	h1 {
+		line-height: 4.5rem;
+		span {
+			color: black;
+			margin-left: 2rem;
+		}
+	}
 }
 
 .social-image {
-	margin-top: 2.5rem;
+	margin-top: 0.8rem;
 	padding-left: 0;
 	padding-right: 0;
 }
 
 .social-stamp {
 	max-width: 8rem;
-	float: right;
-	margin-right: 4rem;
-	margin-bottom: -4rem;
+	position: absolute;
+	top: 0;
+	right: 2rem;
+}
+
+.max-width {
+	max-width: 40rem;
+	margin: 0 auto;
 }
 
 .index-block-left {
@@ -1588,6 +1616,7 @@ h1 {
 	left: 5%;
 	background: black;
 	height: 4px;
+	margin-top: 2rem;
 }
 
 .divider-top {

@@ -16,12 +16,15 @@
 	</div>
 
 	<div class="container">
-		<div class="col-md-6 col-sm-12">
+		<div class="col-md-6 col-sm-6">
 			<h1><?php the_field('about_header') ?></h1>
 			<p style="max-width: 30rem; line-height: 2rem;"><?php the_field('about_description') ?></p>
 		</div>
-		<div class="col-md-6 col-sm-12">
-			<div class="pink-block-left"></div><img style="max-width: 25rem;" src="<?php the_field('about_image') ?>" />
+		<div class="col-md-6 col-sm-6">
+			<div class="image-container">
+				<div class="image-block-right"></div>
+				<img src="<?php the_field('about_image') ?>" />
+			</div>
 		</div>
 		<div class="col-md-12 col-sm-12">
 			<p style="margin-top: 2rem; line-height: 2rem;"><?php the_field('about_description-2') ?></p>
