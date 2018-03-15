@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
          //Navigation
      		menu: '#menu',
      		lockAnchors: false,
-     		anchors:['home', 'latest', 'social', 'about', 'recap', 'newsletter', 'footer'],
+     		anchors:['home', 'latest', 'social', 'about', 'recap', 'newsletter', 'bottom'],
      		navigation: false,
      		navigationPosition: 'right',
      		showActiveTooltip: false,

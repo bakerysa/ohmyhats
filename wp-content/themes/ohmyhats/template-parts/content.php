@@ -14,7 +14,7 @@ $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'full' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header style="background-image: url(<?php echo $url; ?>);background-position: center; background-repeat: no-repeat; background-size: cover; height: 18rem;"  class="entry-header">
+	<header style="background-image: url(<?php echo $url; ?>);background-position: center; background-repeat: no-repeat; background-size: cover; height: 18rem;"  class="entry-header single-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title single-heading">', '</h1>' );

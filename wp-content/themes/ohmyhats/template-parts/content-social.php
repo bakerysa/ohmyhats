@@ -21,6 +21,7 @@
 
 			<div class="max-width">
 
+
 			<?php if( have_rows('social_gallery') ): ?>
 
 				<?php while( have_rows('social_gallery') ): the_row();
@@ -28,7 +29,7 @@
 					$image = get_sub_field('grid_image');
 					?>
 
-					<div class="col-md-4 col-xs-6 social-image">
+					<div class="col-xs-4 social-image">
 
 						<?php if( $image ): ?>
 							<img src="<?php echo $image; ?>" />
@@ -39,9 +40,10 @@
 				<?php endwhile; ?>
 
 			<?php endif; ?>
+
 			</div>
 			</div>
-		<div class="col-md-4 social-cta">
+		<div class="col-md-4 col-sm-12 social-cta">
 			<img class="social-stamp" src="<?php the_field('social_stamp') ?>" />
 			<h1><?php the_field('social_header') ?></h1>
 			<div class="social">

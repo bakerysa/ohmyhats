@@ -118,19 +118,19 @@ add_action( 'widgets_init', 'ohmyhats_widgets_init' );
  */
 function ohmyhats_scripts() {
 
-	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js' );
-
-	wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-
-	wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
+	// wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js' );
+	//
+	// wp_enqueue_style( 'fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+	//
+	// wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
 
 	wp_enqueue_style( 'ohmyhats-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'rubik', 'https://fonts.googleapis.com/css?family=Rubik:400,500,700' );
+	// wp_enqueue_style( 'rubik', 'https://fonts.googleapis.com/css?family=Rubik:400,500,700' );
+	//
+	// wp_enqueue_style( 'poppins', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700' );
 
-	wp_enqueue_style( 'poppins', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700' );
-
-	wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
+	// wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js');
 
 	wp_enqueue_script( 'open-line-communications-vendor', get_template_directory_uri() . '/assets/js/vendors.js' );
 
@@ -181,4 +181,17 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 function remove_category_text_from_archive_title($title) {
     return is_category()?single_cat_title('', false):$title;
 }
-add_filter('get_the_archive_title', 'remove_category_text_from_archive_title'); 
+add_filter('get_the_archive_title', 'remove_category_text_from_archive_title');
+
+//excerpt
+
+function custom_get_the_excerpt($post_id) {
+  global $post;
+  $save_post = $post;
+  $post = get_post($post_id);
+  setup_postdata($post);
+  $output = get_the_excerpt($post);
+  wp_reset_postdata();
+  $post = $save_post;
+  return $output;
+}

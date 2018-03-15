@@ -18,11 +18,6 @@
 			<div class="copyright">
 				<p>Copyright &copy; <?php echo date('Y'); ?> <span>Oh My Hats!</span> <a target="_blank" href="https://bakery.co.za">Designed by  Bakery</a></p>
 			</div>
-			<div class="legal">
-				<p>
-					<a href="">Privacy Policy</a> / <a href="">Business</a> / <a href="">Contact Us</a>
-				</p>
-			</div>
 			<div class="social">
 				<a target="_blank" href="https://facebook.com"><i class="fa fa-facebook border-square" aria-hidden="true"></i></a>
 				<a target="_blank" href="https://twitter.com"><i class="fa fa-twitter border-square" aria-hidden="true"></i></a>

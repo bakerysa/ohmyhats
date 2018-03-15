@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="col-md-6 col-sm-6">
 			<h1><?php the_field('about_header') ?></h1>
-			<p style="max-width: 30rem; line-height: 2rem;"><?php the_field('about_description') ?></p>
+			<p class="max-width" style="line-height: 2rem;"><?php the_field('about_description') ?></p>
 		</div>
 		<div class="col-md-6 col-sm-6">
 			<div class="image-container">

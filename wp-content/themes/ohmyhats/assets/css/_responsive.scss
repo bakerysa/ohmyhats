@@ -111,21 +111,6 @@
     padding-top: 4rem;
   }
 
-  .subtext-tl {
-  	position: relative !important;
-    left: auto;
-  	top: auto;
-  	&:before {
-  		content: '';
-  		position: absolute;
-  		background: black;
-  		left: -4rem;
-  		bottom: 0.8rem;
-  		height: 2px;
-  		width: 3rem;
-  	}
-  }
-
   // Latest Posts
 
   .latest-post {
@@ -134,8 +119,7 @@
 
   .post-preview {
   	background-color: white;
-  	padding: 3rem;
-  	height: 60%;
+  	padding: 2rem;
   	position: relative;
   	top: 30%;
   	width: 80%;
@@ -186,7 +170,7 @@
   }
 
   .image-container {
-  	margin-top: 6rem;
+  	margin: 4rem auto;
   }
 
   .subtext-l {
@@ -207,6 +191,10 @@
   		height: 2px;
   		width: 3rem;
     }
+  }
+
+  .subtext-tl {
+  	position: relative;
   }
 
   // Social
@@ -272,6 +260,31 @@
   	}
   }
 
+  .social-cta {
+  	margin-top: 0;
+    text-align: center;
+  	h1 {
+  		line-height: normal;
+      font-size: 30px;
+  		span {
+  			color: black;
+        display: inline;
+  			margin-left: 0rem;
+  		}
+  	}
+  }
+
+  .social-stamp {
+  	position: relative;
+    padding-top: 3rem;
+  	top: 0;
+  	right: 0rem;
+  }
+
+  .social {
+    margin: 0 auto;
+  }
+
   // About
 
   .index-block-right {
@@ -294,6 +307,10 @@
     }
   }
 
+  .single-heading {
+    font-size: 24px;
+  }
+
   .contact-header {
     h2 {
       font-size: 3rem;
@@ -312,9 +329,10 @@
   }
 
   .social-image {
+    margin-top: 0.5rem;
     text-align: center;
-    padding-left: 15px;
-  	padding-right: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
   // Recap
@@ -328,6 +346,14 @@
     clear: right;
 		width: 100%;
   }
+}
+
+.subtext-l {
+  max-width: 16rem;
+}
+
+.subtext-tl {
+  max-width: 16rem;
 }
 
 .pink-line {
@@ -388,6 +414,25 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1200px)  {
   .subtext-l {
-  	left: 0rem;
+  	left: -2rem;
+  }
+  .social-stamp {
+    position: relative;
+    padding-top: 3rem;
+    top: 0;
+    right: 0rem;
+  }
+  .social-cta {
+    margin-top: 0;
+    text-align: center;
+    h1 {
+      line-height: normal;
+      font-size: 30px;
+      span {
+        color: black;
+        display: inline;
+        margin-left: 0rem;
+      }
+    }
   }
 }

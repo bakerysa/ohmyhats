@@ -14,7 +14,7 @@
 	<div class="newsletter">
 		<!-- Begin MailChimp Signup Form -->
 		<div id="mc_embed_signup">
-		<form action="https://bakery.us15.list-manage.com/subscribe/post?u=d193402af9e984cd092673007&amp;id=0ff20725da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<form action="https://ohmyhats.us12.list-manage.com/subscribe/post?u=6d8dcd7fb20a53953db4e6147&amp;id=61d47d8568" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		    <div id="mc_embed_signup_scroll">
 			<label for="mce-EMAIL">Subscribe to my newsletter</label>
 			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="YOUR EMAIL ADDRESS" required>

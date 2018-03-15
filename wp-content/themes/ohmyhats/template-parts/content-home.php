@@ -60,6 +60,8 @@
 			         * For each item it generates the posts HTML
 			         */
 			        foreach($chunk as $post):
+								$cats = get_the_category($post->ID);
+								$excerpt = custom_get_the_excerpt($post->ID);
 			          $html .= '<div class="latest-post" style="background-image: url('
 								. get_the_post_thumbnail_url($post->ID)
 								. ');
@@ -67,19 +69,19 @@
 				    		background-repeat: no-repeat;
 				    		background-size: cover;
 				    		height: 40rem;"><div class="post-preview"><div class="post-meta"><span>'
-								. get_the_category($recent["cat_name"])
+								. $cats[0]->name
 								.'</span> | '
 								. get_the_date()
 								. '</div>'
 								. '<h1><a href="'
-								. get_permalink($recent["ID"])
+								. get_permalink($post->ID)
 								. '">'
 								. get_the_title($post->ID)
 								.'</a> </h1>'
 								. '<p>'
-								. get_the_excerpt($recent["ID"])
+								. $excerpt
 								.'</p> <a class="post-button" href="'
-								. get_permalink($recent["ID"])
+								. get_permalink($post->ID)
 								.'">Read More</a>';
 			          $html .= '</div></div>';
 			        endforeach;
